@@ -1,0 +1,23 @@
+{
+  "name": "africoin",
+  "version": "1.0.0",
+  "description": "Pan-African digital stablecoin platform",
+  "private": true,
+  "packageManager": "pnpm@10.18.3",
+  "scripts": {
+    "install:backend": "cd apps/backend && pnpm install",
+    "install:frontend": "cd apps/frontend && pnpm install",
+    "dev:frontend": "cd apps/frontend && pnpm dev",
+    "dev:backend": "cd apps/backend && pnpm dev",
+    "dev:contracts": "cd packages/base-blockchain && pnpm dev",
+    "build:frontend": "cd apps/frontend && pnpm build",
+    "build:backend": "cd apps/backend && pnpm build",
+    "build:contracts": "cd packages/base-blockchain && pnpm build",
+    "compile": "cd packages/base-blockchain && pnpm compile",
+    "deploy:sepolia": "cd packages/base-blockchain && pnpm deploy:sepolia",
+    "clean": "rm -rf node_modules apps/*/node_modules packages/*/node_modules"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
